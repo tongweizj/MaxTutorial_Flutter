@@ -97,7 +97,7 @@ class UpdatePagerState extends State<UpdaterPage> {
         return AlertDialog(
           title: Text("New version available"),
           content: Text(
-              "There is newer version of Luci TEMP available, click OK to upgrade now?"),
+              "There is newer version of #xx App# available, click OK to upgrade now?"),
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
             FlatButton(
