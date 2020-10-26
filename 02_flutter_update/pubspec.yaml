@@ -33,6 +33,8 @@ dependencies:
   # A dart library for comparing and incrementing version numbers with Semantic Versioning.
   version: ^1.2.0
   url_launcher: ^5.0.3
+  # 状态管理
+  provider: ^4.3.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

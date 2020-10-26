@@ -44,10 +44,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
   String _messageText = "Waiting for message";
-  String _tokenText = "Wating for token";
+  String _tokenText = "Waiting for token";
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
