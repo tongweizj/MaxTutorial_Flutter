@@ -20,7 +20,6 @@ class UpdatePagerState extends State<UpdaterPage> {
 
   _isUpdate() async {
     var isUpdate = await UpdateModel.isUpdate();
-
     if (isUpdate["isUpdate"] == 1) {
       buildUpdateShowDialog(context, isUpdate["appStoreUrl"]);
     }
