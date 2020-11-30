@@ -13,5 +13,6 @@
 
 我在写这些代码时，自然参考和借鉴了许多朋友，表示感谢。
 
-* [Dane Mackier](https://github.com/FilledStacks/flutter-tutorials)
+* [Dane Mackier](https://github.com/FilledStacks/flutter-tutorials) 提供了很多基础功能的 demo
 * [ducafeca](https://github.com/ducafecat)
+* [Flutter 移动 APP 开发](https://github.com/ducafecat/flutter-learn)
