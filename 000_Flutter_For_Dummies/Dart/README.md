@@ -3,10 +3,8 @@
 ## 资源
 
 - 官网<https://dart.dev/>
-
-https://juejin.im/post/5f07e5bd6fb9a07e7f6bdf16
-
-https://www.dartcn.com/guides/language/language-tour#%E9%87%8D%E8%A6%81%E7%9A%84%E6%A6%82%E5%BF%B5
+- https://juejin.im/post/5f07e5bd6fb9a07e7f6bdf16
+- https://www.dartcn.com/guides/language/language-tour#%E9%87%8D%E8%A6%81%E7%9A%84%E6%A6%82%E5%BF%B5
 
 ## Dart教程目录
 
@@ -18,14 +16,15 @@ https://www.dartcn.com/guides/language/language-tour#%E9%87%8D%E8%A6%81%E7%9A%84
 4. 运行Dart
 
 ### 2.基本知识
+
 关键字
+
 1. Dart 入口方法main方法介绍
 2. Dart 打印内容
 3. 注释
    单行注释
    多行注释
    文档注释
-
 5. Dart 定义变量
     默认值
     Final 和 Const
@@ -33,6 +32,7 @@ https://www.dartcn.com/guides/language/language-tour#%E9%87%8D%E8%A6%81%E7%9A%84
 7. Dart 变量命名规则
 
 ### 3. 内建类型 数据类型详解
+
 1. Dart 字符串类型
 2. Dart 数值类型
 3. Dart 布尔类型
@@ -47,6 +47,7 @@ https://www.dartcn.com/guides/language/language-tour#%E9%87%8D%E8%A6%81%E7%9A%84
     Map
     Rune
     Symbol -->
+
 ### 4. Dart运算符 条件表达式 Dart类型转换（35分 6秒）
 
 1. Dart 算术运算符
@@ -81,6 +82,7 @@ assert -->
 5. break continue用法区别
 
 ### 异常
+
 throw
 catch
 finally
@@ -161,6 +163,7 @@ main() 函数
 4. Dart中的mixins 的类型
 
 ### 13. Dart中的泛型
+
 <!-- 为什么使用泛型
 使用集合字面量
 使用泛型类型的构造函数
@@ -174,6 +177,7 @@ main() 函数
 4. Dart 中的泛型 泛型接口
 
 ### 14. Dart中的库
+
 1. Dart中的库
 2. Dart中导入自己本地库
 3. 导入系统内置库 math库
@@ -184,6 +188,7 @@ main() 函数
 8. 部分导入 延迟加载
 
 ### 异步支持
+
 处理 Future
 声明异步函数
 处理 Stream
