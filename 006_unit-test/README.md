@@ -1,8 +1,6 @@
 # README
 
-## cil 
-
-纯dart项目
+## 纯dart项目cil
 
 ```bash
 # Create a small app
@@ -19,9 +17,26 @@ dart test/cil_test.dart
 #00:00 +1: All tests passed!
 ```
 
-## my_app
+### 生成 junit 格式的测试报告(xml)
 
-flutter 项目
+使用[dart-junitreport](https://github.com/TOPdesk/dart-junitreport)
+
+```bash
+pub run test simple_test.dart --reporter json > example.jsonl
+
+pub global run junitreport:tojunit --input example.jsonl --output TEST-report.xml
+
+```
+
+### 测试报告 xml转 html
+
+https://github.com/inorton/junit2html
+
+```bash
+npm run junit2html TEST-report.xml --outreport.html
+```
+
+## 创建 flutter 项目my_app
 
 ```bash
 # Create a small app
