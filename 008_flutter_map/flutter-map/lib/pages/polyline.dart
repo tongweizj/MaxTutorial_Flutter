@@ -38,15 +38,19 @@ class PolylinePage extends StatelessWidget {
                 options: MapOptions(
                   center: LatLng(51.5, -0.09),
                   zoom: 5.0,
+<<<<<<< HEAD
                   plugins: [
                     ZoomButtonsPlugin(),
                   ],
+=======
+>>>>>>> c265471d8ae810d1aa8f9627c48cc08e947640a2
                 ),
                 layers: [
                   TileLayerOptions(
                       urlTemplate:
                           'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                       subdomains: ['a', 'b', 'c']),
+<<<<<<< HEAD
                   // PolylineLayerOptions(
                   //   polylines: [
                   //     Polyline(
@@ -55,6 +59,16 @@ class PolylinePage extends StatelessWidget {
                   //         color: Colors.purple),
                   //   ],
                   // ),
+=======
+                  PolylineLayerOptions(
+                    polylines: [
+                      Polyline(
+                          points: points,
+                          strokeWidth: 4.0,
+                          color: Colors.purple),
+                    ],
+                  ),
+>>>>>>> c265471d8ae810d1aa8f9627c48cc08e947640a2
                   PolylineLayerOptions(
                     polylines: [
                       Polyline(
@@ -66,6 +80,7 @@ class PolylinePage extends StatelessWidget {
                           Color(0xff007E2D),
                         ],
                       ),
+<<<<<<< HEAD
                       Polyline(
                           points: points,
                           strokeWidth: 4.0,
@@ -78,6 +93,10 @@ class PolylinePage extends StatelessWidget {
                       mini: true,
                       padding: 10,
                       alignment: Alignment.bottomRight),
+=======
+                    ],
+                  ),
+>>>>>>> c265471d8ae810d1aa8f9627c48cc08e947640a2
                 ],
               ),
             ),
