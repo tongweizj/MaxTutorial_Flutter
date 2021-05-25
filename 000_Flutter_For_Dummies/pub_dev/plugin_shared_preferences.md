@@ -1,7 +1,11 @@
 # SharedPreferences 轻量级键值对存储
 
+
+
 ## 资料来源
+
 - https://juejin.im/post/5db6d6f16fb9a0206965a0f3
+
 
 
 # 基本用法
@@ -10,13 +14,22 @@
 final prefs = await SharedPreferences.getInstance();
 
 
+
 ## 保存
+
+
+
 字符类型数据setString
 保存int类型数据setInt
 设置布尔类型数据setBool
 设置Double类型数据setDouble
 
+
+
 ## 获取
+
+
+
 获取字符类型数据getString
 获取int类型数据getInt
 获取布尔类型数据getBool
@@ -28,7 +41,11 @@ final prefs = await SharedPreferences.getInstance();
 (更多更详细请看官方文档，最下面的相关链接里面的SharedPreferences class)
 
 
+
 ## List 存储和读取
+
+
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -56,5 +73,4 @@ _save() async {
   print('Your list  $myOriginaList');
   await prefs.setStringList('mylist', myListOfStrings);
 }
-
 
