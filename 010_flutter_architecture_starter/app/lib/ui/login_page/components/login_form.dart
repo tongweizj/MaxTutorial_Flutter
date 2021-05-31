@@ -84,45 +84,50 @@ Widget buildLoginForm(
 // 执行登录操作
 _handleLogin(BuildContext context, TextEditingController _emailController,
     TextEditingController _passController) async {
-  /// 1. 表单数据校验
-  if (!checkIsEmail(_emailController.value.text)) {
-    toastInfo(msg: 'Please check your email!');
-    return;
-  }
-  if (!checkStringLength(_passController.value.text, 6)) {
-    toastInfo(msg: 'Please check your password!');
-    return;
-  }
+  Navigator.pushNamed(
+    context,
+    "/home",
+  );
 
-  /// 2.登录
-  // Map userProfile = await UserControl.doUserLogin(
-  //     _emailController.value.text, _passController.value.text);
-  Map userProfile = await UsersAPI.login(
-      username: _emailController.value.text,
-      passwd: _passController.value.text);
+  // /// 1. 表单数据校验
+  // if (!checkIsEmail(_emailController.value.text)) {
+  //   toastInfo(msg: 'Please check your email!');
+  //   return;
+  // }
+  // if (!checkStringLength(_passController.value.text, 6)) {
+  //   toastInfo(msg: 'Please check your password!');
+  //   return;
+  // }
 
-  /// 3.根据登录返回数据
-  if (userProfile['code'] == 1) {
-    /// 注册通知服务
-    // var params = {
-    //   "data": {
-    //     "email": _emailController.value.text,
-    //     "registrationToken": _firebaseMessagingToken,
-    //     "app": "luci_temp",
-    //     "mobile_sys": "android"
-    //   },
-    //   "credential": Global.credential
-    // };
-    // NotifyAPI.postUserRegister();
+  // /// 2.登录
+  // // Map userProfile = await UserControl.doUserLogin(
+  // //     _emailController.value.text, _passController.value.text);
+  // Map userProfile = await UsersAPI.login(
+  //     username: _emailController.value.text,
+  //     passwd: _passController.value.text);
 
-    /// 跳转首页
-    Navigator.pushNamed(
-      context,
-      "/home",
-    );
-  } else {
-    toastInfo(msg: userProfile['message']);
-  }
+  // /// 3.根据登录返回数据
+  // if (userProfile['code'] == 1) {
+  //   /// 注册通知服务
+  //   // var params = {
+  //   //   "data": {
+  //   //     "email": _emailController.value.text,
+  //   //     "registrationToken": _firebaseMessagingToken,
+  //   //     "app": "luci_temp",
+  //   //     "mobile_sys": "android"
+  //   //   },
+  //   //   "credential": Global.credential
+  //   // };
+  //   // NotifyAPI.postUserRegister();
+
+  //   /// 跳转首页
+  //   Navigator.pushNamed(
+  //     context,
+  //     "/home",
+  //   );
+  // } else {
+  //   toastInfo(msg: userProfile['message']);
+  // }
 }
 
 // 执行忘记密码操作
