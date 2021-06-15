@@ -43,3 +43,8 @@ pod update
 
 确定在 pod update 时，安装 firebase 的插件是正常的
 
+
+
+### 3. 在firebase创建的应用，只能用在一个项目里
+
+想放到第二个项目，就像apple id 是一样的，也不行
